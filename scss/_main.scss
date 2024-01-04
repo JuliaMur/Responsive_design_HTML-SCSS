@@ -1,0 +1,147 @@
+@import "vars";
+
+.pinned-section{
+    max-width: 1470px;
+    margin: 0 auto;
+    padding: 25px 19px 17px;
+    display: grid;
+    grid-template-areas: 
+    "card1 card1 card2 card3"
+    "card1 card1 card4 card5";
+    gap: 0.5em;
+
+    &__card__text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        & p{
+            font-weight: 700;
+        }
+    }
+    
+    & article{
+        color: $color-font;
+        border-radius: 15px;
+        padding: 40px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 120px;
+        min-width: 150px;
+        
+    }
+
+    & button {
+        border-radius: 25px;
+        line-height: 1;
+        letter-spacing: 2px;
+        font-family: $ff-secondary;
+        font-weight: 800;
+        text-transform: uppercase;
+        padding: 5px 7px 5px 9px;
+        font-size: 8px;
+        max-width: 65px;
+       
+    }
+
+    & article:hover{
+        transform: translateY(-2%);
+    }
+    
+    & article:nth-child(1){
+        grid-area: card1;
+        
+        & h3{
+            font-family: $ff-main;
+            font-size: 2em;
+        }
+        background-image: url("/img/pin1.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-blend-mode: overlay;
+        background-color: rgba(0,0,0,0.3)
+    }
+    
+    & article:nth-child(2){
+        grid-area: card2;
+        
+        & h3{
+            font-family: $ff-main;
+            font-size: 1em;
+        }
+        background-image: url(/img/pin2.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-blend-mode: overlay;
+        background-color: rgba(2, 19, 255, 0.747)
+    }
+    & article:nth-child(3){
+        grid-area: card3;
+        
+        & p{
+            color: $bg-color;
+        }
+        
+        & button{
+            background-color: $bg-color;
+            color: rgba(250, 159, 106, 0.884)
+        }
+        
+        & h3{
+            font-family: $ff-main;
+            font-size: 1em;
+            color: $bg-color;
+        }
+        
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-blend-mode: overlay;
+        background-color: rgba(250, 159, 106, 0.884)
+    }
+    & article:nth-child(4){
+        grid-area: card4;
+        
+        & h3{
+            font-family: $ff-main;
+            font-size: 1em;
+        }
+        background-image: url(/img/pin4.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-blend-mode: overlay;
+        background-color: rgb(75, 6, 102)
+    }
+    
+    & article:nth-child(5){
+        grid-area: card5;
+        
+        & p{
+            color: $bg-color;
+        }
+        
+        & button{
+            background-color: $bg-color;
+            color: rgb(255, 133, 245)
+        }
+        
+        & h3{
+            font-family: $ff-main;
+            font-size: 1em;
+            color: $bg-color;
+        }
+        background-image: url(/img/pin5.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-blend-mode: overlay;
+        background-color: rgb(255, 133, 245)
+    }
+}
+
+
